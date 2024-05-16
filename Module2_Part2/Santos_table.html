@@ -1,113 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Using Tables</title>
 
     <style>
-        table{
+        table {
             margin-left: auto;
             margin-right: auto;
         }
-        table, th, td{
+
+        table,
+        th,
+        td {
             border: 1px solid black;
-            border-collapse: collapse ;
+            border-collapse: collapse;
             /*border: 1px;
             border-style: solid;
             border-color: black;*/
         }
-        td{
+
+        td {
             padding-left: 5px;
             padding-right: 5px;
         }
-        th{
+
+        th {
             background-color: antiquewhite;
         }
-        tr:nth-child(odd){
-            background-color: aquamarine;
+
+        tr:nth-child(odd) {
+            background-color: lightgray;
         }
-        tr:nth-child(even){
-            background-color: green;
+
+        tr:nth-child(even) {
+            background-color: white;
         }
-        #favorite-quantity{
+
+        #favorite-quantity {
             color: red;
         }
     </style>
 
 </head>
+
 <body>
-    <h3>Using Tables</h3>
+
     <table>
-    <table>
-        <thead>
-            <tr>
-                <th colspan="6">My Schedule</th>
-            </tr>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Supplier</th>
-                <th>Date</th>
-                <th>Image</th>
-            </tr>
-        </thead>
-            
-            
-        <tbody>
-            <tr>
-                <td>200</td>
-                <td>Boy bawang adobo</td>
-                <td id="favorite-quantity">10000</td>
-                <td rowspan="8">Kuya J</td>
-                <td rowspan="2">16/05/24</td>
-            </tr>
-            <tr>
-                <td>10001</td>
-                <td>Boy bawang adobo</td>
-                <td>321002</td>
-                
-            </tr>
-            <tr>
-                <td>2131231</td>
-                <td>Boy Bawang Adobo</td>
-                <td>3214124</td>
-                <td rowspan="2">17/05/24</td>
-            </tr>
-            <tr>
-                <td>1231231</td>
-                <td>Boy Bawang Adobo</td>
-                <td id="favorite-quantity">5000234</td>
-                
-            </tr>
-            <tr>
-                <td>323144</td>
-                <td>Boy Bawang Adobo</td>
-                <td>50201121</td>
-                <td rowspan="2">18/05/2024</td>
-            </tr>
-            <tr>
-                <td>6969696</td>
-                <td>Boy Bawang Adobo</td>
-                <td>41241241</td>
-
-            </tr>
-            <tr>
-                <td>323144</td>
-                <td>Boy Bawang Adobo</td>
-                <td>50201121</td>
-                <td rowspan="2">18/05/2024</td>
-            </tr>
-            <tr>
-                <td>6969696</td>
-                <td>Boy Bawang Adobo</td>
-                <td>41241241</td>
-
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="6">INVENTORY SYSTEMS</th>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Supplier</th>
+                    <th>Date</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
 
 
-        </tbody>
-    </table>
+            <tbody>
+                <tr>
+                    <td>20001</td>
+                    <td>Coca-Cola</td>
+                    <td id="favorite-quantity">100</td>
+                    <td rowspan="8">Etihad</td>
+                    <td rowspan="2">16/05/24</td>
+                    <td rowspan="8"><div style="width: 100%; margin:auto;">
+                        <img src="https://shop.phoenixbev.mu/wp-content/uploads/1040-1.jpg" alt="Coca-Cola Logo" width="75%">
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>20002</td>
+                    <td>Coca-Cola</td>
+                    <td>5500</td>
+
+                </tr>
+                <tr>
+                    <td>20003</td>
+                    <td>Coca-Cola</td>
+                    <td>3460</td>
+                    <td rowspan="2">17/05/24</td>
+                </tr>
+                <tr>
+                    <td>20004</td>
+                    <td>Coca-Cola</td>
+                    <td id="favorite-quantity">503</td>
+
+                </tr>
+                <tr>
+                    <td>20005</td>
+                    <td>Coca-Cola</td>
+                    <td>5020</td>
+                    <td rowspan="2">18/05/2024</td>
+                </tr>
+                <tr>
+                    <td>20006</td>
+                    <td>Coca-Cola</td>
+                    <td>4124</td>
+
+                </tr>
+                <tr>
+                    <td>20007</td>
+                    <td>Coca-Cola</td>
+                    <td>2003</td>
+                    <td rowspan="2">18/05/2024</td>
+                </tr>
+                <tr>
+                    <td>20008</td>
+                    <td>Coca-Cola</td>
+                    <td>1451</td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
 </body>
+
 </html>
