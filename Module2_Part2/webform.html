@@ -19,7 +19,7 @@
             padding: 15px;
         }
 
-        input[type='text'], input[type='password'], input[type='email']{
+        input[type='text'], input[type='password'], input[type='email'] textarea{
             width: 100%;
         }
         .form-control {
@@ -34,7 +34,7 @@
 
 <body>
     <div class="form-container">
-        <form action="#" method="get">
+        <form action="#" method="post">
             <div class="form-control">
                 <label for="username">Username</label>
                 <input type="text" name="username" placeholder="Please enter your Username...">
@@ -57,10 +57,22 @@
                 <label class="check">
                     <input type="checkbox" name="hobbies" id="hobbies" value="swimming" checked>Swimming</input>
                 </label>
+                <label class="check">
                 <input type="checkbox" name="hobbies" id="hobbies" value="reading">Reading</input>
+                </label>
+                <label class="check">
                 <input type="checkbox" name="hobbies" id="hobbies" value="gaming">Gaming</input>
+                </label>
             </div>
-            <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni quibusdam placeat distinctio aspernatur, iusto eius ex cum inventore, ipsum illum itaque voluptatum autem illo ad deleniti excepturi, officiis reiciendis.</textarea>
+            <div class="form-control">
+                <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni quibusdam placeat distinctio aspernatur, 
+                    iusto eius ex cum inventore, ipsum illum itaque voluptatum 
+                    autem illo ad deleniti excepturi, officiis reiciendis.</textarea>
+            </div>
+            <div class="form-control">
+                <button type="submit" name="submit">Sign Up</button>
+                <button type="reset">Reset Form</button>
+            </div>
         </form>
     </div>
 
