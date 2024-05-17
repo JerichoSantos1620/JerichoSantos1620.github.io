@@ -19,6 +19,9 @@
             padding: 15px;
         }
 
+        input[type='text'], input[type='password'], input[type='email']{
+            width: 100%;
+        }
         .form-control {
             margin-bottom: 3px;
         }
@@ -34,7 +37,7 @@
         <form action="#" method="get">
             <div class="form-control">
                 <label for="username">Username</label>
-                <input type="text" name="username">
+                <input type="text" name="username" placeholder="Please enter your Username...">
             </div>
             <div class="form-control">
                 <label for="password">Password</label>
@@ -42,21 +45,22 @@
             </div>
             <div class="form-control">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" value="@gmail.com">
             </div>
             <div class="form-control">
                 <label class="radio">Sex</label>
-                <input type="radio" name="sex" id="sex" value="male">Male</input>
+                <input type="radio" name="sex" id="sex" value="male" checked>Male</input>
                 <input type="radio" name="sex" id="sex" value="female">Female</input>
             </div>
             <div class="form-control">
                 Hobbies
                 <label class="check">
-                    <input type="checkbox" name="hobbies" id="hobbies" value="swimming">Swimming</input>
+                    <input type="checkbox" name="hobbies" id="hobbies" value="swimming" checked>Swimming</input>
                 </label>
                 <input type="checkbox" name="hobbies" id="hobbies" value="reading">Reading</input>
                 <input type="checkbox" name="hobbies" id="hobbies" value="gaming">Gaming</input>
             </div>
+            <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni quibusdam placeat distinctio aspernatur, iusto eius ex cum inventore, ipsum illum itaque voluptatum autem illo ad deleniti excepturi, officiis reiciendis.</textarea>
         </form>
     </div>
 
