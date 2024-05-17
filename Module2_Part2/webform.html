@@ -22,7 +22,7 @@
         .form-control {
             margin-bottom: 3px;
         }
-        input[type='radio'], input[type='checkbox']{
+        .radio, .check{
             display: block;
         }
 
@@ -45,13 +45,15 @@
                 <input type="email" name="email" id="email">
             </div>
             <div class="form-control">
-                <label for="sex">Sex</label>
+                <label class="radio">Sex</label>
                 <input type="radio" name="sex" id="sex" value="male">Male</input>
                 <input type="radio" name="sex" id="sex" value="female">Female</input>
             </div>
             <div class="form-control">
-                <label for="hobbies">Hobbies</label>
-                <input type="checkbox" name="hobbies" id="hobbies" value="swimming">Swimming</input>
+                Hobbies
+                <label class="check">
+                    <input type="checkbox" name="hobbies" id="hobbies" value="swimming">Swimming</input>
+                </label>
                 <input type="checkbox" name="hobbies" id="hobbies" value="reading">Reading</input>
                 <input type="checkbox" name="hobbies" id="hobbies" value="gaming">Gaming</input>
             </div>
