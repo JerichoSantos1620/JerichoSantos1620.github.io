@@ -19,7 +19,7 @@
             padding: 15px;
         }
 
-        input[type='text'], input[type='password'], input[type='email'] textarea{
+        input[type='text'], input[type='password'], input[type='email'] input[type='contact no.'] textarea{
             width: 100%;
         }
         .form-control {
@@ -36,7 +36,7 @@
     <div class="form-container">
         <form action="#" method="get">
             <div class="form-control">
-                <label for="username">Username</label>
+                <label for="username">Your Name</label>
                 <input type="text" name="username" placeholder="Please enter your Username...">
             </div>
             <div class="form-control">
@@ -46,6 +46,10 @@
             <div class="form-control">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" value="@gmail.com">
+            </div>
+            <div class="form-control">
+                <label for="contact no.">Contact No.</label>
+                <input type="contact no." name="contact no." id="contact no." value="+63">
             </div>
             <div class="form-control">
                 <label class="radio">Sex</label>
@@ -65,9 +69,8 @@
                 </label>
             </div>
             <div class="form-control">
-                <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni quibusdam placeat distinctio aspernatur, 
-                    iusto eius ex cum inventore, ipsum illum itaque voluptatum 
-                    autem illo ad deleniti excepturi, officiis reiciendis.</textarea>
+                <label for="Message">Message</label>
+                <textarea></textarea>
             </div>
             <div class="form-control">
                 <button type="submit" name="submit">Sign Up</button>
