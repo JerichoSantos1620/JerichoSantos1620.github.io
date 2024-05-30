@@ -1,8 +1,8 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background-image: url(https://wallpapers.com/images/hd/green-pattern-wallpaper-asvi47v187gofae6.jpg);
+.bg-custom{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWqwJxB1u1NAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC);
     background-size: 1500px;
     
 }
