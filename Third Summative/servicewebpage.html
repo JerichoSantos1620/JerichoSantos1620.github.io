@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product/Service Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Internal CSS */
+        body {
+            padding-top: 56px;
+        }
+
+        .product-section {
+            padding: 60px 0;
+        }
+
+        .product-img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">My Product</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <h1 class="mt-4">Welcome to My Product</h1>
+            <p class="lead">The best product for all your needs</p>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="product-section bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">Features</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="https://via.placeholder.com/150" class="product-img mb-3" alt="Feature 1">
+                    <h3>Feature 1</h3>
+                    <p>Detail about feature 1.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://via.placeholder.com/150" class="product-img mb-3" alt="Feature 2">
+                    <h3>Feature 2</h3>
+                    <p>Detail about feature 2.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://via.placeholder.com/150" class="product-img mb-3" alt="Feature 3">
+                    <h3>Feature 3</h3>
+                    <p>Detail about feature 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="product-section text-center">
+        <div class="container">
+            <h2 class="mb-4">Pricing</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Basic
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$9.99 / month</h5>
+                            <p class="card-text">Description of basic plan.</p>
+                            <a href="#" class="btn btn-primary">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Standard
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$19.99 / month</h5>
+                            <p class="card-text">Description of standard plan.</p>
+                            <a href="#" class="btn btn-primary">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Premium
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$29.99 / month</h5>
+                            <p class="card-text">Description of premium plan.</p>
+                            <a href="#" class="btn btn-primary">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="product-section bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">Contact Us</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <div class="container">
+            <small>&copy; 2024 My Product. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // JavaScript for interactivity
+        $(document).ready(function () {
+            $('form').on('submit', function (e) {
+                e.preventDefault();
+                alert('Form submitted!');
+            });
+        });
+    </script>
+</body>
+
+</html>
